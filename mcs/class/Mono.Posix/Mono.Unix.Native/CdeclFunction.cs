@@ -26,6 +26,8 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
+#if !NET_CORE
+
 using System;
 using System.Collections;
 using System.Reflection;
@@ -186,3 +188,4 @@ namespace Mono.Unix.Native {
 	}
 }
 
+#endif
