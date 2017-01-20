@@ -380,7 +380,11 @@ namespace Mono.Unix.Native {
 	//
 	public class Stdlib
 	{
+#if NET_CORE
+		internal const string LIBC = "libc";
+#else
 		internal const string LIBC = "msvcrt";
+#endif
 		internal const string MPH  = "MonoPosixHelper";
 
 		// It is possible for Mono.Posix and MonoPosixHelper to get out of sync,
